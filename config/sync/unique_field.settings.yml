@@ -1,0 +1,8 @@
+unique_field_settings:
+  community:
+    fields:
+      field_one_site_id: field_one_site_id
+    scope: type
+    comp: each
+  page:
+    fields: {  }

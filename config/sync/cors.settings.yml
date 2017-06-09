@@ -1,0 +1,5 @@
+domains:
+  '*': 'http://localhost:3000|POST,GET,OPTION|Authorization,X-CSRF-Token,Content-type|true'
+  graphql: "http://localhost:3000|POST,GET,OPTION|Authorization,X-CSRF-Token,Content-type|true\r\n/graphql|http://localhost:3000|POST,GET,OPTION|Authorization,X-CSRF-Token,Content-type|true"
+_core:
+  default_config_hash: nCJuMn5x07t9O5N-iSHrh4M1-cEN43AOdMu32YtvYbc

@@ -1,0 +1,86 @@
+uuid: 6e24e109-f19e-43c3-ad9b-4cf09e79803c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.community.body
+    - field.field.node.community.field_address
+    - field.field.node.community.field_image
+    - field.field.node.community.field_one_site_id
+    - field.field.node.community.field_pets
+    - field.field.node.community.field_phone
+    - field.field.node.community.field_plans
+    - node.type.community
+  module:
+    - address
+    - image
+    - text
+    - user
+id: node.community.default
+targetEntityType: node
+bundle: community
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_address:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_one_site_id:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_pets:
+    type: entity_reference_entity_view
+    weight: 7
+    region: content
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+  field_phone:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_plans:
+    weight: 6
+    label: hidden
+    settings:
+      view_mode: graphql
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,28 @@
+uuid: 8b9f1932-3143-4c6a-9bf8-7e62848b208a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pets
+    - node.type.community
+    - taxonomy.vocabulary.pet
+id: node.community.field_pets
+field_name: field_pets
+entity_type: node
+bundle: community
+label: Pets
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pet: pet
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

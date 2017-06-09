@@ -1,0 +1,21 @@
+uuid: d457ac67-a736-4a4d-98fe-8b0c8b16660f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone
+    - node.type.community
+  module:
+    - telephone
+id: node.community.field_phone
+field_name: field_phone
+entity_type: node
+bundle: community
+label: Phone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

@@ -1,0 +1,41 @@
+uuid: e81a66b3-eb6e-4d4b-ba74-703977233f5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.graphql
+    - field.field.node.plan.body
+    - field.field.node.plan.field_image
+    - node.type.plan
+    - responsive_image.styles.narrow
+  module:
+    - responsive_image
+    - text
+    - user
+id: node.plan.graphql
+targetEntityType: node
+bundle: plan
+mode: graphql
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 102
+    label: hidden
+    settings:
+      responsive_image_style: narrow
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

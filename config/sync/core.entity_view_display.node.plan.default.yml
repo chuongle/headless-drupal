@@ -1,0 +1,38 @@
+uuid: a0f9ab15-d71d-476d-a912-5edd4f5fc217
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.plan.body
+    - field.field.node.plan.field_image
+    - node.type.plan
+  module:
+    - image
+    - text
+    - user
+id: node.plan.default
+targetEntityType: node
+bundle: plan
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 102
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    type: image_url
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

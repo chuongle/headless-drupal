@@ -1,0 +1,18 @@
+uuid: 2f5905c0-dcd1-4ed3-bae9-4987ad6b562c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'execute graphql requests'
+  - 'search content'
+  - 'use graphql explorer'
+  - 'use text format restricted_html'
