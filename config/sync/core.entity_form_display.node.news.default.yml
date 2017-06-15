@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
+    - field.field.node.news.field_file
     - field.field.node.news.field_sub_title
     - node.type.news
   module:
+    - file
     - path
     - text
 id: node.news.default
@@ -29,6 +31,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_file:
+    weight: 33
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
   field_sub_title:
     weight: 32
     settings:

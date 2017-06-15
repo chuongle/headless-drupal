@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
+    - field.field.node.news.field_file
     - field.field.node.news.field_sub_title
     - node.type.news
   module:
+    - file
     - text
     - user
 id: node.news.default
@@ -20,6 +22,13 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_file:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
     region: content
   field_sub_title:
     weight: 102
