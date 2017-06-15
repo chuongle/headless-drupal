@@ -28,7 +28,6 @@
         "drupal/devel": "1.0-rc2",
         "drupal/graphql": "3.x-dev",
         "drupal/pathauto": "1.0-rc1",
-        "drupal/unique_field": "2.x-dev",
         "drush/drush": "~8.0",
         "webflo/drupal-finder": "^0.3.0",
         "webmozart/path-util": "^2.3"
