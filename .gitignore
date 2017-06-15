@@ -9,6 +9,9 @@
 # Ignore Drupal's file directory
 /web/sites/*/files/
 
+# Ignore Drupal's contrib modules
+/web/modules/contrib
+
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest
 
@@ -16,4 +19,4 @@
 /.idea/
 
 # Ignore docker configuration
-docker-compose.yml
+/.docker-sync/
