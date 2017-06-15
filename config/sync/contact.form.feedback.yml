@@ -1,4 +1,4 @@
-uuid: 46e2bda9-832e-498d-a99d-d181de4c0dc0
+uuid: d52ccee4-45ed-49d6-993f-80eb3dadc914
 langcode: en
 status: true
 dependencies: {  }
@@ -7,7 +7,7 @@ _core:
 id: feedback
 label: 'Website feedback'
 recipients:
-  - chuong@poeticsystems.com
+  - chuongtdle91@gmail.com
 reply: ''
 weight: 0
 message: 'Your message has been sent.'

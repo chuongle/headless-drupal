@@ -19,8 +19,8 @@ services:
       DB_NAME: drupal
       DB_DRIVER: mysql
     volumes:
-      # - ./:/var/www/html
-      - docker-sync:/var/www/html # Docker-sync for macOS users
+      - ./:/var/www/html:cached
+      # - docker-sync:/var/www/html # Docker-sync for macOS users
 
   nginx:
     image: wodby/drupal-nginx:8-1.10-2.1.0
@@ -32,8 +32,8 @@ services:
       NGINX_BACKEND_HOST: php
       NGINX_SERVER_ROOT: /var/www/html/web
     volumes:
-      - docker-sync:/var/www/html # Docker-sync for macOS users
-      # - ./:/var/www/html
+      # - docker-sync:/var/www/html # Docker-sync for macOS users
+      - ./:/var/www/html:cached
 
     labels:
       - 'traefik.backend=headless_nginx_1'
@@ -57,5 +57,5 @@ services:
 
 volumes:
   codebase:
-  docker-sync:
-    external: true
+  # docker-sync:
+  #   external: true

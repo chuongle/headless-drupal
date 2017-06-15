@@ -1,8 +1,0 @@
-uuid: e33362be-bef0-450f-adc6-9e58b116ddb4
-langcode: en
-status: true
-dependencies: {  }
-id: main-menu
-label: 'Main Menu'
-description: 'Main Menu'
-locked: false
