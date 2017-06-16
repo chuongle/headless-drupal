@@ -36,7 +36,7 @@ services:
       - ./:/var/www/html:cached
 
     labels:
-      - 'traefik.backend=headless_nginx_1'
+      - 'traefik.backend=drupal_nginx_1'
       - 'traefik.port=80'
       - 'traefik.frontend.rule=Host:drupal.docker.localhost'
 
@@ -47,13 +47,13 @@ services:
       - 'traefik.port=8025'
       - 'traefik.frontend.rule=Host:mailhog.drupal.docker.localhost'
 
-  traefik:
-    image: traefik
-    command: -c /dev/null --web --docker --logLevel=INFO
-    ports:
-      - '8000:80'
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+  # traefik:
+  #   image: traefik
+  #   command: -c /dev/null --web --docker --logLevel=INFO
+  #   ports:
+  #     - '8000:80'
+  #   volumes:
+  #     - /var/run/docker.sock:/var/run/docker.sock
 
 volumes:
   codebase:
